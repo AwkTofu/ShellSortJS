@@ -14,7 +14,7 @@ function shellSort(arr) {
 			let temp = arr[i];
 			
 			//This is the insection sort to sort the section into order
-			let j; //This is the insection sort to sort the section into order
+			let j;
 			for (j = i; j >= gap && arr[j-gap] > temp; j-=gap)
 			{
 				arr[j] = arr[j-gap];
