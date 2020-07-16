@@ -3,8 +3,8 @@ let customGap = [700, 300, 132, 57, 23, 10, 4 , 1]
 
 function shellSort(arr) {
 	let n = arr.length;
-	//Start with a really large gap, and then reduce the gap until there isn't any
 
+	//Start with a really large gap, and then reduce the gap until there isn't any
 	//With this, the gap starts as half of the array length, and then half of that every time
 	for (let gap = Math.floor(n/2); gap > 0; gap = Math.floor(gap/2))
 	{
@@ -30,8 +30,8 @@ function shellSort(arr) {
 
 function shellSortWithCustomGaps(arr) {
 	let n = arr.length;
-	//Start with a really large gap, and then reduce the gap until there isn't any
 
+	//Start with a really large gap, and then reduce the gap until there isn't any
 	//This is to use a custom gap array that you setup beforehand.
 	for (let gapIndex = 0; gapIndex < customGap.length; gapIndex++)
 	{
